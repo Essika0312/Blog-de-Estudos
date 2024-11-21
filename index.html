@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+       <h3 style="font-size: 23px; margin-left: 40px;">Hábitos de Estudos</h3>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <div class="imagem-fundo">
+        <div class="titulo-container">
+            <h1>Hábitos de Estudos</h1>
+        </div>
+    </div>
+
+    <div class="container" id="inicio">
+        <div class="container_child">
+          <div class="container_item">
+            <h2>Melhore Seu Foco Já!</h2>
+            <p>Descubra técninas eficazes para melhorar sua concentração e seus estudos através da nossa plataforma Estudos ++
+                <br>
+                <br>
+                Além do mais você pode tirar dúvidas com nossos editores, analisar nossas pesquisas e muito mais!
+            </p>
+          </div>
+        <div class="box">
+          <div class="box_item">
+    <img src="https://media.gettyimages.com/id/623201854/photo/woman-studying-late-at-night.jpg?b=1&s=2048x2048&w=0&k=20&c=IvUtSpLpMPeJdDDOOA1aRTkWs0E3ycRW3HKAy5ceMz4=" alt="">
+          </div>
+          <div class="box_item">
+            <img src="https://media.gettyimages.com/id/501893144/photo/late-night-study.jpg?b=1&s=2048x2048&w=0&k=20&c=CrXC1jodaBpc-LGgbx12adnSfx-zmoorKVjDq-SVvfw="/>
+          </div>
+        </div>
+        </div>
+        <div class="container_child">
+    <img src="https://media.gettyimages.com/id/1475870530/photo/laptop-mockup-and-desk-for-studying-at-night-in-student-dormitory-dark-room-and-technology.jpg?b=1&s=2048x2048&w=0&k=20&c=1lQ1VK_-NK30na0LNMdjS0b_-Abjkv7uOdt7DxiJ2s8=" alt="">
+        </div>
+      </div>
+
+    <div class="second-container" id="dicas">
+        <h2>Melhores Dicas de Estudos</h2>
+
+        <h3>•   Preferência por Estudos Online</h3>
+        <p>
+            Em uma pesquisa realizada sobre hábitos de estudo, 40,8% das 49 pessoas entrevistadas indicaram que preferem estudar online do que outros meios e locais, como na escola, lendo livros e em cursos. Isso mostra como o formato online continua ganhando destaque, sendo uma escolha prática para muitos estudantes.
+            <br>
+            <br>
+            Se você também prefere estudar online, confira estas dicas para tornar sua experiência ainda mais produtiva:
+            <br>
+            <br>
+            Crie um ambiente adequado: escolha um local tranquilo e confortável.
+            <br>
+            Estabeleça uma rotina: planeje horários regulares para manter a disciplina.
+            <br>
+            Minimize distrações: desligue notificações e organize suas tarefas com antecedência.
+            <br>
+            Aproveite os recursos disponíveis: explore cursos, tutoriais e ferramentas digitais que facilitem o aprendizado.</p>
+            <h4>Continue rolando!</h4>
+    </div>
+
+    <div class="third-container">
+
+        <h3>•   Preferência de horários</h3>
+        <p>
+           Nesta mesma pesquisa, foi possível analisar que mais de 30% dos entrevistados optam por não estudar e outros 70% que estudam de forma regular ou não regular.
+            <br>
+            <br>
+            Se você tem bastante hábito de estudar confira esse cronograma baseado na técnica Pomodoro:
+            <br>
+            <br>
+            Escolha uma tarefa: Defina o que você vai estudar ou trabalhar.
+            <br>
+            Defina o timer para 25 minutos: Concentre-se na tarefa sem interrupções.
+            <br>
+            Faça uma pausa curta de 5 minutos: Relaxe, levante-se, beba água.
+            <br>
+            Repita por 4 ciclos: Após quatro "pomodoros", faça uma pausa mais longa de 15 a 30 minutos.
+            <br><br>
+            A Técnica Pomodoro ajuda a:
+            <br><br>
+            Manter o foco em blocos de tempo.
+            <br>
+            Reduzir a procrastinação com metas claras.
+            <br>
+            Evitar a fadiga com pausas regulares.</p>
+    </div>
+
+    <div class="forth-container" id="sobre">
+
+        <h2>Sobre</h2>
+
+        <h3>• Quem Somos?</h3>
+        <p>
+            Somos estudantes do Sesi CATEM e criamos este blog como parte de um trabalho escolar. Não é um site oficial, mas todas as informações que compartilhamos aqui vêm de pesquisas feitas por nós, então podem confiar que são verídicas! <br><br>
+            Nosso objetivo é dividir com vocês dicas, curiosidades e tudo o que aprendemos durante esse projeto. A gente fez isso com muito carinho e esperamos que você goste do conteúdo e aproveite as ideias que trouxemos por aqui.
+        </p>
+        <br><br>
+        
+    </div>
+ 
+
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector('header');
+    
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+    
+            if (prevScrollPos > currentScrollPos) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
+    
+            prevScrollPos = currentScrollPos;
+        };
+    
+        window.addEventListener('mousemove', (e) => {
+            if (e.clientY <= 10) {
+                header.classList.add('visible');
+            }
+        });
+    
+        window.addEventListener('mousemove', (e) => {
+            if (e.clientY > 10) {
+                let currentScrollPos = window.pageYOffset;
+                if (prevScrollPos < currentScrollPos) {
+                    header.classList.remove('visible');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
